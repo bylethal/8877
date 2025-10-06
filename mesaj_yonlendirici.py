@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 
 # --- DEĞİŞKENLER ---
-BOT_TOKEN = "--aPc"
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
 KAYNAK_GRUP_ID = -4809397519
 HEDEF_GRUP_ID = -4938013083
 AYIRICI_SATIR = "⸻⸻⸻⸻⸻⸻"
@@ -78,5 +78,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
